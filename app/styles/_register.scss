@@ -1,0 +1,35 @@
+.main {
+  margin-top: 2rem;
+}
+
+.register-form {
+  width: 20rem;
+  max-width: 75%;
+  margin: auto;
+  background: $form-white;
+  box-shadow: 1px 8px 55px #000000;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-field {
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.input-field {
+}
+
+.save-button {
+  align-self: center;
+  width: 5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border: 0;
+  background: $brand-blue;
+  color: $brand-gold;
+}

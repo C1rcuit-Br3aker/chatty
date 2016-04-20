@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background: $brand-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}

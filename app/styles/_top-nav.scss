@@ -1,0 +1,18 @@
+.header {
+  width: 100vw;
+  background: $brand-blue;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55vw;
+  min-width: 23rem;
+  margin-left: 1rem;
+  color: $brand-gold;
+}
+
+.register {
+  color: $brand-gold;
+}
