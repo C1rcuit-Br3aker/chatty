@@ -19,5 +19,16 @@
 
       <button class="save-button">Register</button>
     </div>
+
+    <div class="form-extra">
+      <div class="form-extra__content">
+        <p class="form-extra__content__text">
+          If you are already registered, click here to go to the login page.
+        </p>
+        {{#link-to "login"}}
+          <button class="save-button">Login</button>
+        {{/link-to}}
+      </div>
+    </div>
   </form>
 </div>

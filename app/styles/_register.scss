@@ -7,12 +7,13 @@
   max-width: 75%;
   margin: auto;
   background: $form-white;
-  box-shadow: 1px 8px 55px #000000;
+  box-shadow: 1px 8px 55px $form-black;
 }
 
 .form-inputs {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
   padding: 1rem;
 }
 
@@ -32,4 +33,23 @@
   border: 0;
   background: $brand-blue;
   color: $brand-gold;
+}
+
+.form-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+
+  &__content {
+    width: 80%;
+    margin: auto;
+    border-top: 1px solid $form-grey;
+    text-align: center;
+
+    &__text {
+      margin-top: 3rem;
+    }
+  }
+
 }
