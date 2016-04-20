@@ -1,1 +1,29 @@
-{{outlet}}
+<div class="main">
+  <form class="register-form" {{action login model on="submit"}}>
+    <div class="form-inputs">
+
+      <p class="form-field">
+        <label class="input-label">Email:</label>
+        {{input class="input-field" type="text" placeholder="Email" value=model.email}}
+      </p>
+
+      <p class="form-field">
+        <label class="input-label">Password:</label>
+        {{input class="input-field" type="password" placeholder="Password" value=model.password}}
+      </p>
+
+      <button class="save-button">Login</button>
+    </div>
+
+    <div class="form-extra">
+      <div class="form-extra__content">
+        <p class="form-extra__content__text">
+          Not registered? Register using the link below.
+        </p>
+        {{#link-to "register"}}
+          <button class="save-button">Register</button>
+        {{/link-to}}
+      </div>
+    </div>
+  </form>
+</div>
