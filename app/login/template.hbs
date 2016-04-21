@@ -1,15 +1,15 @@
 <div class="main">
-  <form class="register-form" {{action login model on="submit"}}>
+  <form class="register-form" {{action login email password on="submit"}}>
     <div class="form-inputs">
 
       <p class="form-field">
         <label class="input-label">Email:</label>
-        {{input class="input-field" type="text" placeholder="Email" value=model.email}}
+        {{input class="input-field" type="text" placeholder="Email" value=email}}
       </p>
 
       <p class="form-field">
         <label class="input-label">Password:</label>
-        {{input class="input-field" type="password" placeholder="Password" value=model.password}}
+        {{input class="input-field" type="password" placeholder="Password" value=password}}
       </p>
 
       <button class="save-button">Login</button>

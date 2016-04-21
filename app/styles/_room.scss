@@ -1,0 +1,40 @@
+.room-title {
+  color: $form-white;
+  text-align: center;
+}
+
+.main-container__content {
+  margin-left: 1rem;
+}
+
+.created-at {
+  color: darken($form-white, 60);
+}
+
+.user-name {
+  color: lighten($brand-blue, 15);
+}
+
+.post-content {
+  color: $brand-gold;
+}
+
+.post__container {
+  display: flex;
+  width: 100%;
+}
+
+.post-input {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.post-btn {
+  align-self: center;
+  width: 5rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border: 0;
+  background: $brand-blue;
+  color: $brand-gold;
+}
