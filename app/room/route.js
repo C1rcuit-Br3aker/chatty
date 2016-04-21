@@ -1,9 +1,18 @@
 import Ember from 'ember';
+import { task, timeout } from 'ember-concurrency';
 
 export default Ember.Route.extend({
   model() {
     return this.store.findAll(`message`);
   },
 
-  // const refresh = window.setInterval(model, 2000);
+
+  // setupController() {
+  //   this.get(`refreshPage`);
+  // },
+  //
+  // refreshPage: task(function * () {
+  //   yield timeout(2000);
+  //   return this.store.findAll(`message`);
+  // }),
 });
