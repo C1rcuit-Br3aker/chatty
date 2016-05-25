@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class="header">
+  <div class="header__container">
+    {{#link-to "register" class="links"}}
+    <p class="login-link">Register</p>
+    <p class="login-link">/Login</p>
+    {{/link-to}}
+    <h2 id="title">Preds Chatty</h2>
+  </div>
+</header>
 
 {{outlet}}

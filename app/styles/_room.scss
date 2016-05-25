@@ -1,0 +1,49 @@
+.room-title {
+  margin-bottom: 0;
+  color: $form-white;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 84vh;
+}
+
+.main-container__content {
+  flex: 1;
+  margin-left: 1rem;
+  overflow: scroll;
+}
+
+.created-at {
+  color: darken($form-white, 60);
+}
+
+.user-name {
+  color: lighten($brand-blue, 15);
+}
+
+.post-content {
+  color: $brand-gold;
+}
+
+.post__container {
+  display: flex;
+  width: 100%;
+}
+
+.post-input {
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+.post-btn {
+  align-self: center;
+  width: 5rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border: 0;
+  background: $brand-blue;
+  color: $brand-gold;
+}

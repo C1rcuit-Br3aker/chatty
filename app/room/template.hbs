@@ -1,0 +1,17 @@
+<h1 class="room-title">On the Ice</h1>
+
+<div class="main-container">
+  <div class="main-container__content">
+    {{#each model as |message|}}
+      <p class="message-text">
+        <span class="created-at">{{message.createdAt}}</span>
+        <span class="user-name">{{message.chatter.username}}</span>
+        <span class="post-content">{{message.content}}</span>
+      </p>
+    {{/each}}
+  </div>
+  <form class="post__container"{{action postMessage newPost on="submit"}}>
+    {{input class="post-input" value=newPost placeholder="Start Typing"}}
+    <button class="post-btn">Post</button>
+  </form>
+</div>
