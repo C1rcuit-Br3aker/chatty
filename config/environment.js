@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },
 
     'ember-simple-auth': {
-      authenticationRoute: `login`,
+      authenticationRoute: `room`,
     },
 
     APP: {

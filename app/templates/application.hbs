@@ -1,11 +1,31 @@
 <header class="header">
   <div class="header__container">
-    {{#link-to "register" class="links"}}
-    <p class="login-link">Register</p>
-    <p class="login-link">/Login</p>
+    {{#if session.isAuthenticated}}
+      <p class="welcome">
+        Welcome, {{session.session.content.authenticated.user.username}}
+      </p>
+    {{else}}
+      {{#link-to "register" class="links"}}
+      <p class="login-link">Register</p>
+      {{/link-to}}
+    {{/if}}
+
+    {{#link-to "room" class="title"}}
+      <h2 class="login-link">Preds Chatty</h2>
     {{/link-to}}
-    <h2 id="title">Preds Chatty</h2>
+
+    {{#if session.isAuthenticated}}
+
+      {{#link-to "logout" class="links"}}
+        <p class="login-link">Logout</p>
+      {{/link-to}}
+
+    {{else}}
+
+    {{#link-to "login" class="links"}}
+      <p class="login-link">Login</p>
+    {{/link-to}}
+
+    {{/if}}
   </div>
 </header>
-
-{{outlet}}
