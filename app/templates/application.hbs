@@ -29,3 +29,10 @@
     {{/if}}
   </div>
 </header>
+
+{{#if session.isAuthenticated}}
+
+{{else}}
+  <h2 class="error-msg">You must be logged in to view the chatroom.</h2>
+{{/if}}
+{{outlet}}

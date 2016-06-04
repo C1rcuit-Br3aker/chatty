@@ -8,6 +8,8 @@ export default Ember.Controller.extend({
 
     chatter.save().then(() => {
       return this.get(`session`).authenticate(`authenticator:application`, attr.email, attr.password);
+    }).then(() => {
+      this.transitionToRoute(`room`);
     });
   },
 });
