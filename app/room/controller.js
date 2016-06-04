@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
 
   refreshPage: task(function * () {
     while (true) {
-      yield timeout(2000);
+      yield timeout(45);
       this.store.findAll(`message`, { include: `chatter` });
       const x = $(`.main-container__content`);
       x.scrollTop(10000000);
