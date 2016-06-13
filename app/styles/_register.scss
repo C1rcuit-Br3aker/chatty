@@ -1,5 +1,7 @@
-.main {
-  margin-top: 2rem;
+.content {
+  min-height: 92vh;
+  padding-top: 2rem;
+  background: $brand-background;
 }
 
 .register-form {
@@ -7,7 +9,8 @@
   max-width: 75%;
   margin: auto;
   background: $form-white;
-  box-shadow: 1px 8px 55px $form-black;
+  text-shadow: none;
+  box-shadow: 8px 8px 55px $form-black;
 }
 
 .form-inputs {

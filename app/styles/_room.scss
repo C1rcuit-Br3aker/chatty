@@ -1,5 +1,5 @@
 .room-title {
-  margin-bottom: 0;
+  margin-top: 0;
   color: $form-white;
   text-align: center;
 }
@@ -7,7 +7,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  height: 84vh;
+  height: 80vh;
 }
 
 .main-container__content {
@@ -42,13 +42,16 @@
   align-self: center;
   width: 5rem;
   padding: 0.5rem 0;
-  font-size: 1rem;
   border: 0;
   background: $brand-blue;
   color: $brand-gold;
+  font-size: 1rem;
 }
 
 .error-msg {
-  text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+  background: $brand-background;
   color: $brand-gold;
+  text-align: center;
 }

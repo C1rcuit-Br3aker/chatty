@@ -11,7 +11,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background: $brand-background;
+  background: url("http://i.imgur.com/mpsgktn.jpg") no-repeat center center fixed;
+  background-size: cover;
   text-shadow: $shadow;
 }
 
